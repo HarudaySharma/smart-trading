@@ -1,0 +1,35 @@
+[
+    {
+        token: '25516',
+        symbol: 'FLEXITUFF-BE',
+        name: 'FLEXITUFF',
+        expiry: '',
+        strike: '-1.000000',
+        lotsize: '1',
+        instrumenttype: '',
+        exch_seg: 'NSE',
+        tick_size: '1.000000'
+    },
+    {
+        token: '11452',
+        symbol: 'CCL-EQ',
+        name: 'CCL',
+        expiry: '',
+        strike: '-1.000000',
+        lotsize: '1',
+        instrumenttype: '',
+        exch_seg: 'NSE',
+        tick_size: '5.000000'
+    },
+    {
+        token: '22153',
+        symbol: '729WB29-SG',
+        name: '729WB29',
+        expiry: '',
+        strike: '-1.000000',
+        lotsize: '100',
+        instrumenttype: '',
+        exch_seg: 'NSE',
+        tick_size: '1.000000'
+    }
+]
