@@ -3,6 +3,7 @@ import { model, Schema } from "mongoose";
 const StockExchangeSchema = new Schema({
     exchange: {
         type: String,
+        enum: ['NSE', 'BSE', 'NSF'],
         required: true,
     },
     tradingSymbols: [{
@@ -10,10 +11,16 @@ const StockExchangeSchema = new Schema({
             type: String,
             required: true,
         },
-        symbol: {
-            type: String
-        },
         name: {
+            type: String,
+            required: true,
+        },
+        exch_seg: {
+            type: String,
+            enum: ['NSE', 'BSE', 'NSF'],
+            required: true,
+        },
+        symbol: {
             type: String,
             required: true,
         },
@@ -28,10 +35,6 @@ const StockExchangeSchema = new Schema({
         },
         instrumenttype: {
             type: String,
-        },
-        exch_seg: {
-            type: String,
-            required: true,
         },
         tick_size: {
             type: String,

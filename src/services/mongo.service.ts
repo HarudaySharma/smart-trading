@@ -8,6 +8,7 @@ export default async function connectToAtlas()  {
     const dbName = "root";
 
     try {
+        console.log(`CONNECTING TO MONGO ATLAS DB: "${dbName}"...`)
         await mongoose.connect(url, { dbName, })
         console.log(`CONNECTED TO MONGO ATLAS DB: "${dbName}"`)
         return true;
