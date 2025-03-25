@@ -32,6 +32,29 @@ async function run() {
         console.log(err)
         console.log(`ERROR GETTING EXCHANGE: "${exchSymbol} FROM DB`);
     }
+
+
+
+    // NOTE:
+    // Not able to fetch historical data by hitting angel one smart api endpoint
+    // Not sure why!!
+    // Therefore, will try using the SmartApi NodeJS library.
+
+    //for fetching historical data off all the nse trading symbols
+    /*
+    try {
+        //const companies = nseSyms.slice(0, 21).map(obj => ({ name: obj.name, token: obj.token }));
+        const data = await fetchHistoricalDataBulk(sym, [{
+            name: nseSyms.at(0)!.name,
+            token: '20302',
+        }]);
+
+        console.log(data);
+    }
+    catch (err) {
+        console.log(err);
+    } */
+
 }
 
 run();

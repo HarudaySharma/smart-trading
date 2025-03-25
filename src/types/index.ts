@@ -1,4 +1,3 @@
-
 type EXCH_SEG = 'NSE' | 'BSE' | 'NSF';
 
 interface TradingSymbol {
